@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Organicart</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="brand">Organicart</a>
+            <div class="nav-links">
+                <a href="/">Products</a>
+                <div id="auth-links">
+                    <a href="/login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding: 4rem 1.5rem;">
+        <h2 style="font-size: 2.5rem;">Your Cart</h2>
+        <div class="cart-layout">
+            <div class="cart-items" id="cart-items-container">
+                <!-- Items will be injected here -->
+                <div class="spinner"></div>
+            </div>
+            
+            <div class="cart-summary">
+                <h3 style="margin-bottom: 1.5rem;">Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="summary-total">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="btn btn-primary" style="width: 100%; margin-top: 2rem;">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="/js/cart.js"></script>
+</body>
+</html>
